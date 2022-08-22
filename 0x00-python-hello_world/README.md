@@ -11,3 +11,5 @@
 6. use the variables str1 and str2 to print
 7. Manipulate and print string range
 8. Print modified variable without creating new variable or string literals
+9. Python script that prints "The Zen of Python", by Tim Peters
+

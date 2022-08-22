@@ -1,0 +1,3 @@
+#!/bin/bash
+SUB=$(echo $PYFILE | cut -d '.' -f 1)
+python3 -m py_compile $PYFILE && mv __pychache__/* $SUB.pyc && -rf __pycache__

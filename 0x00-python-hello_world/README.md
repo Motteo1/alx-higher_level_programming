@@ -14,3 +14,5 @@
 9. Python script that prints "The Zen of Python", by Tim Peters
 10. A function in C that checks if a singly linked list has a cycle in it
 11. Determine if there's a linked list cycle/loop
+12. Python script using sys module to write to stderr
+13. Shell script that compiles into .pyc file

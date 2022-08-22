@@ -7,7 +7,7 @@
  * @h: pointer to head of list
  * Return: number of nodes
  */
-size_t printlistint_t(const listint_t *h)
+size_t print_listint_t(const listint_t *h)
 {
 	const listint_t *current;
 	unsigned int n; /* number of nodes */
@@ -26,7 +26,7 @@ size_t printlistint_t(const listint_t *h)
 
 /**
  * add_nodeint - adds a new node at the beginning of a listint_t list
- * @head: pointer to apointer of the start of the list
+ * @head: pointer to a pointer of the start of the list
  * @n: integer to be included in node
  * Return: address of the new element or NULL if it fails
  */
@@ -48,7 +48,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 /**
  * free_listint - frees a listint_t list
  * @head: pointer to list to be freed
- * Retrun: void
+ * Return: void
  */
 void free_listint(listint_t *head)
 {

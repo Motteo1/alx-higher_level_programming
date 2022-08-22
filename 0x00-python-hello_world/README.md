@@ -12,4 +12,5 @@
 7. Manipulate and print string range
 8. Print modified variable without creating new variable or string literals
 9. Python script that prints "The Zen of Python", by Tim Peters
-
+10. A function in C that checks if a singly linked list has a cycle in it
+11. Determine if there's a linked list cycle/loop

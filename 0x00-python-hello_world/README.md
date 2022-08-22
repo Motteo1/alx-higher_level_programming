@@ -16,3 +16,10 @@
 11. Determine if there's a linked list cycle/loop
 12. Python script using sys module to write to stderr
 13. Shell script that compiles into .pyc file
+14. Write a Python function that does the same as the below bytecode: 
+ 3 .. 0 LOAD_CONST .... 1 (98)
+ .... 3 LOAD_FAST ..... 0 (a)
+ .... 6 LOAD_FAST ..... 1 (b)
+ .... 9 BINARY_POWER
+ ....10 BINARY_ADD
+ ....11 RETURN_VALUE

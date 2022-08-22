@@ -9,4 +9,5 @@
 4. print the float stored in the variable number with a precision of 2 digits
 5. print 3 times a string stored in the variable str followed by its first 9 characters
 6. use the variables str1 and str2 to print
+7. Manipulate and print string range
 

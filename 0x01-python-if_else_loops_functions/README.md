@@ -16,4 +16,5 @@
 10. function that computes a to the power of b and returns the value
 11. Function that prints the numbers form 1 to 100 separated by a space - FizzBuzz
 12. Function in c that inserts a number into a sorted singly linked list
+13. Prints the alphabet, in reverse order, alternating lowercase and uppercase (z in lowercase and Y in uppercase), not followed by anew line
 

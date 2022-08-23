@@ -14,4 +14,5 @@
 8. Function that prints a string in uppercase  followed by a new line
 9. Function that prints the last digit of a number
 10. function that computes a to the power of b and returns the value
+11. Function that prints the numbers form 1 to 100 separated by a space - FizzBuzz
 

@@ -6,4 +6,5 @@
 0. Print whether the random number is positive or negative
 1. Print the last digit of the number stored in prints the alphabet, in lowercase, not followed by a new line variable
 2. Prints the alphabet in lowercase, not followed by a new line
+3. Print the alphabets in lowercase, not followed by a new line
 

@@ -7,4 +7,5 @@
 1. Print the last digit of the number stored in prints the alphabet, in lowercase, not followed by a new line variable
 2. Prints the alphabet in lowercase, not followed by a new line
 3. Print the alphabets in lowercase, not followed by a new line
+4. Prints all numbers from 0 to 98 in decimal and in hexadecimal
 

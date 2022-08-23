@@ -11,4 +11,5 @@
 5. Prints numbers 0 to 99
 6. Prints all possible different combinations of two digits
 7. Function that checks for lowercase character
+8. Function that prints a string in uppercase  followed by a new line
 

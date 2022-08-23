@@ -8,4 +8,6 @@
 2. Prints the alphabet in lowercase, not followed by a new line
 3. Print the alphabets in lowercase, not followed by a new line
 4. Prints all numbers from 0 to 98 in decimal and in hexadecimal
+5. Prints numbers 0 to 99
+6. Prints all possible different combinations of two digits
 

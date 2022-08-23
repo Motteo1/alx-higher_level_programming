@@ -17,4 +17,5 @@
 11. Function that prints the numbers form 1 to 100 separated by a space - FizzBuzz
 12. Function in c that inserts a number into a sorted singly linked list
 13. Prints the alphabet, in reverse order, alternating lowercase and uppercase (z in lowercase and Y in uppercase), not followed by anew line
+14. Function that creates a copy of the string, removing the character at the position n(not the Python way, the "C array index")
 

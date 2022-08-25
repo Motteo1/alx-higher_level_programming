@@ -68,3 +68,11 @@
 
 9. Prints the alphabet in uppercase, followed by a new line
 
+# Environment
+  ~ Language: Python 3.4.3
+  ~ OS: Ubuntu 14.04 LTS
+  ~ Compiler: Python3
+  ~ Style guidelines: PEP 8 (version 1.7)
+
+# Authors
+ Tim Irungu

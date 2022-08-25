@@ -12,9 +12,8 @@
 6. Imports all functions from the file calculator_1.pyand handles basic operations (Sample usage: ./100-my_calculator.py 5 / 7 )
 7. Prints #pythoniscool via importing another file that prints it
 8. Write a Python function def_calculation(a, b): that does exactly the same as below bytecode:
-
- 
-	3           0 LOAD_CONST               1 (0)
+        
+        3           0 LOAD_CONST               1 (0)
 	            3 LOAD_CONST               2 (('add', 'sub'))
         	    6 IMPORT_NAME              0 (magic_calculation_102)
 	            9 IMPORT_FROM              1 (add)
@@ -70,12 +69,12 @@
 
 9. Prints the alphabet in uppercase, followed by a new line
 
-#- Environment
+# Environment
 
- Language: Python 3.4.3
- OS: Ubuntu 14.04 LTS
- Compiler: python3
- Style guidelines: PEP 8 (version 1.7)
+Language: Python 3.4.3
+OS: Ubuntu 14.04 LTS
+Compiler: python3
+Style guidelines: PEP 8 (version 1.7)
 
-#- Authors
+# Authors
  Tim Irungu

@@ -9,8 +9,5 @@
 4. Prints specific conmtent within the compiled module (curl -Lso "hidden_4.pyc"
    "https://github.com/holbertonschool/0x02.py/raw/master/hidden_4.pyc")
 5. Imports the variable a from the file variable_load_5.py and prints its value
-5. Imports the variable a from the file variable_load_5.py and prints its value
-5. Imports the variable a from the file variable_load_5.py and prints its value
-5. Imports the variable a from the file variable_load_5.py and prints its value
-5. Imports the variable a from the file variable_load_5.py and prints its value
+6. Imports all functions from the file calculator_1.pyand handles basic operations (Sample usage: ./100-my_calculator.py 5 / 7 )
 

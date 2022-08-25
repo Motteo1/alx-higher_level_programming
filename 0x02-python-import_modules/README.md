@@ -66,4 +66,5 @@
             	  107 LOAD_CONST               0 (None)
             	  110 RETURN_VALUE
 
+9. Prints the alphabet in uppercase, followed by a new line
 

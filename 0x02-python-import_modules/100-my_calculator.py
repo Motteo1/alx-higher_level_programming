@@ -4,13 +4,13 @@ from sys import argv
 
 if __name__ == "__main__":
     if len(argv) != 4:
-        print("usage:", argv[0], "<a> <operator> <b>")
+        print("Usage:", argv[0], "<a> <operator> <b>")
         exit(1)
 
     op = argv[2]
     f = {"+": add, "-": sub, "*": mul, "/": div}
     if op not in f:
-        print("unknown operator. Available operators: +, -< * and /")
+        print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
     a = int(argv[1])

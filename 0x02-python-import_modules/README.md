@@ -8,4 +8,9 @@
 3. Prints the addition of all arguments (Sample usage: ./pythonscript 79 -3 10 8)
 4. Prints specific conmtent within the compiled module (curl -Lso "hidden_4.pyc"
    "https://github.com/holbertonschool/0x02.py/raw/master/hidden_4.pyc")
+5. Imports the variable a from the file variable_load_5.py and prints its value
+5. Imports the variable a from the file variable_load_5.py and prints its value
+5. Imports the variable a from the file variable_load_5.py and prints its value
+5. Imports the variable a from the file variable_load_5.py and prints its value
+5. Imports the variable a from the file variable_load_5.py and prints its value
 

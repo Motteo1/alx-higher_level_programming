@@ -15,4 +15,6 @@
  10. function that finds all multiples of 2 in a list
  11. function that deletes the item at a specific position in a list
  12. switch value of a and b
- 13. 
+ 13. function in c that checks if a singly linked list is a palindrome 
+ lists.h - holds file function prototypes for #13
+

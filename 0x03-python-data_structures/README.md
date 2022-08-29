@@ -3,4 +3,5 @@
 
 #$ Description:
  0. Prints all integers of a list
+ 1. function that replaces an element of a list at a specific position (like in C)
 

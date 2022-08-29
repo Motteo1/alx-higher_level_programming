@@ -10,7 +10,7 @@
  * VIEW MANUAL-> https://github.com/python/cpython/blob/master/Include/object.h 
  */
 
-void print_python_list_info(pyObject *p)
+void print_python_list_info(PyObject *p)
 {
 	Py_ssize_t size, alloc, idx;
 

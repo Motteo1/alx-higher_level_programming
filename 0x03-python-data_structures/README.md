@@ -12,4 +12,6 @@
  7. function that adds 2 tuples
  8. function that returns a tuple with the length of a string and its first character
  9. function that finds the biggest integer of a list
- 10. 
+ 10. function that finds all multiples of 2 in a list
+ 11. function that deletes the item at a specific position in a list
+ 

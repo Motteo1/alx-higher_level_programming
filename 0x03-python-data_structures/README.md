@@ -11,4 +11,5 @@
  6. function that prints a matrix of integers
  7. function that adds 2 tuples
  8. function that returns a tuple with the length of a string and its first character
- 9.     
+ 9. function that finds the biggest integer of a list
+ 10. 

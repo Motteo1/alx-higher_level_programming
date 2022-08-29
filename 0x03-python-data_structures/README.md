@@ -14,4 +14,5 @@
  9. function that finds the biggest integer of a list
  10. function that finds all multiples of 2 in a list
  11. function that deletes the item at a specific position in a list
- 
+ 12. switch value of a and b
+ 13. 

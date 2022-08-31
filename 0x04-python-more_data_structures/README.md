@@ -1,7 +1,7 @@
-# Python - More Data Structures: Set, Dictionary
- Each file in this directory holds code that illustrutes how to create and manipulate sets and dictionaries
+## Python - More Data Structures: Set, Dictionary
+>Each file in this directory holds code that illustrutes how to create and manipulate sets and dictionaries
 
-#   Description:
+###   Description:
  0. Function that returns square value matrix of all integers of a matrix
  1. Find and replace an element in a list
  2. Addition of all unique integers in a list
@@ -15,8 +15,13 @@
  10. Returns a key with the biggest integer value in a dictionary
  11. Returns a list with all values multiplied by a number
  12. Converts a Roman number to an integer
+ 13. Returns the weighted average of all integers tuple
 
-#   Environment
-`	Language: Python 3.43
-`	OS: Ubuntu 14.04 LTS
+###   Environment
++ Language: Python 3.43
++ OS: Ubuntu 14.04 LTS
++ Compiler: python3
++ Style guidelines: PEP 8 (version 1.7)
 
+####  Author
+Tim I

@@ -27,5 +27,5 @@
 + Style guidelines: [PEP 8 (version 1.7)](https://www.python.org/dev/peps/pep-0008/)
 
 ***
-###  Author
-Tim I
+###  Author:
+Tim I ([Motteo1](https://github.com/Motteo1))

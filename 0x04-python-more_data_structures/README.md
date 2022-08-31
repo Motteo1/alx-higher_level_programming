@@ -23,5 +23,6 @@
 + Compiler: python3
 + Style guidelines: PEP 8 (version 1.7)
 
+***
 ####  Author
 Tim I

@@ -12,3 +12,5 @@
  7. Replace or add key/value in a dictionary
  8. Deletes a key in a dictionary
  9. Returns a new dictionary with all values multiplied by 2
+ 10. Returns a key with the biggest integer value in a dictionary
+ 

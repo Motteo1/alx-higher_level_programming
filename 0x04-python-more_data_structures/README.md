@@ -16,7 +16,9 @@
  11. Returns a list with all values multiplied by a number
  12. Converts a Roman number to an integer
  13. Returns the weighted average of all integers tuple
- 14. A function that computes the square value of all integers of a matrix using `map
+ 14. A function that computes the square value of all integers of a matrix using ~map~
+ 15. A function that deletes keys with a specific value in a dictionary
+
 
 ###   Environment
 + Language: Python 3.43

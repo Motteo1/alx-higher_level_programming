@@ -9,4 +9,5 @@
  4. Retruns a set of all elements present in only one set
  5. Retruns the number of keys in a dictionary
  6. Prints a dictionary by ordered keys, sorted dictionary
- 7. 
+ 7. Replace or add key/value in a dictionary
+ 8. 

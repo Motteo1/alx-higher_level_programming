@@ -6,4 +6,5 @@
  1. Find and replace an element in a list
  2. Addition of all unique integers in a list
  3. Returns a set of common elements in two sets 
- 4. 
+ 4. Retruns a set of all elements present in only one set
+ 5. 

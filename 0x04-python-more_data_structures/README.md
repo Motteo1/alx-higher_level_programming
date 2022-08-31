@@ -18,14 +18,14 @@
  13. Returns the weighted average of all integers tuple
  14. A function that computes the square value of all integers of a matrix using `map`
  15. A function that deletes keys with a specific value in a dictionary
-
+ 16. Create two C functions that print some basic info about Python lists and Python bytes objects
 
 ###   Environment
 + Language: Python 3.43
 + OS: Ubuntu 14.04 LTS
 + Compiler: python3
-+ Style guidelines: PEP 8 (version 1.7)
++ Style guidelines: [PEP 8 (version 1.7)](https://www.python.org/dev/peps/pep-0008/)
 
 ***
-####  Author
+###  Author
 Tim I

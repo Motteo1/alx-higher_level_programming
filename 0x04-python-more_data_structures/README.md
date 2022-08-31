@@ -8,4 +8,5 @@
  3. Returns a set of common elements in two sets 
  4. Retruns a set of all elements present in only one set
  5. Retruns the number of keys in a dictionary
- 6. 
+ 6. Prints a dictionary by ordered keys, sorted dictionary
+ 7. 

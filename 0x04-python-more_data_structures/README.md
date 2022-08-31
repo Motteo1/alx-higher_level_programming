@@ -3,4 +3,5 @@
 
  # Description:
  0. Function that returns square value matrix of all integers of a matrix
-
+ 1. Find and replace an element in a list
+ 2.

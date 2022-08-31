@@ -10,4 +10,5 @@
  5. Retruns the number of keys in a dictionary
  6. Prints a dictionary by ordered keys, sorted dictionary
  7. Replace or add key/value in a dictionary
- 8. 
+ 8. Deletes a key in a dictionary
+ 9. 

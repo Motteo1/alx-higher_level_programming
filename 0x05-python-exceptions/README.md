@@ -6,6 +6,7 @@
 1. prints values if integer, returns True or False to integer
 2. prints first x elements of a list and only integers
 3. divides 2 integers and prints the result
+4. divides element by element 2 lists
 
 ### Environment
 * Language: Python 3.4.3

@@ -7,6 +7,7 @@
 2. prints first x elements of a list and only integers
 3. divides 2 integers and prints the result
 4. divides element by element 2 lists
+5. raises a type exception
 
 ### Environment
 * Language: Python 3.4.3

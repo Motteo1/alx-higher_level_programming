@@ -12,7 +12,8 @@
 7. function that prints an integer
 8. function that excecutes a function safely
 9. function `def magic_calculation(a, b):` that does exactly as the following bytecode:
- 3           0 LOAD_CONST               1 (0)
+ ```
+  3           0 LOAD_CONST               1 (0)
               3 STORE_FAST               2 (result)
 
   4           6 SETUP_LOOP              94 (to 103)
@@ -66,7 +67,7 @@
 
  13     >>  103 LOAD_FAST                2 (result)
             106 RETURN_VALUE 
-
+```
 
 ### Environment
 * Language: Python 3.4.3

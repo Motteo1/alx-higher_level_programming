@@ -10,6 +10,8 @@
 5. raises a type exception
 6. raises a name exception with a message
 7. function that prints an integer
+8. function that excecutes a function safely
+
 
 ### Environment
 * Language: Python 3.4.3

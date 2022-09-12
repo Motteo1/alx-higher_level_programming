@@ -12,7 +12,7 @@ void print_python_list(PyObject *p)
 {
 	Py_ssize_t size, alloc, i;
 	const char *type;
-	PyListObject *list = (PyListObject *p)p;
+	PyListObject *list = (PyListObject *)p;
 	PyVarObject *var = (PyVarObject *)p;
 
 	size = var->ob_size;
@@ -100,5 +100,5 @@ void print_python_float(PyObject *p)
 	buffer = PyOS_double_to_string(float_obj->ob_fval, 'r', 0,
 			Py_DTSF_ADD_DOT_0, NULL);
 	printf("  value: %s\n", buffer);
-	Pymem_free(buffer);
+	PyMem_Free(buffer);
 }

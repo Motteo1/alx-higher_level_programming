@@ -68,6 +68,8 @@
  13     >>  103 LOAD_FAST                2 (result)
             106 RETURN_VALUE 
 ```
+10. Create three C functions that print some basic info about Python list, Python bytes and Python float objects
+
 
 ### Environment
 * Language: Python 3.4.3

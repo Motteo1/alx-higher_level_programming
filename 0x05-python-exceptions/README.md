@@ -9,7 +9,7 @@
 4. divides element by element 2 lists
 5. raises a type exception
 6. raises a name exception with a message
-
+7. function that prints an integer
 
 ### Environment
 * Language: Python 3.4.3

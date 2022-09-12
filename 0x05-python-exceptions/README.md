@@ -8,6 +8,8 @@
 3. divides 2 integers and prints the result
 4. divides element by element 2 lists
 5. raises a type exception
+6. raises a name exception with a message
+
 
 ### Environment
 * Language: Python 3.4.3

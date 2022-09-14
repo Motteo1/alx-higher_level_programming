@@ -9,7 +9,7 @@
 4. Access and update private attribute
 5. Print a square based on the previous files
 6. define private postion attribute to use in printing offsets
-
+7. 100 - create head, insert nodes, ptint with `__str__`
 
 ### Environment
 * Language: Pyhton 3.4.3

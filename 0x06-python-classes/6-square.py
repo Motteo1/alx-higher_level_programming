@@ -24,12 +24,12 @@ class Square:
         my_print(self)
     """
 
-    def __init__self(self, size=0, position=(0, 0)):
+    def __init__(self, size=0, position=(0, 0)):
         """
         Initializes square
 
         Attributes:
-            size (int): defaults to 0 if not none; don't use __size to call setter
+            size (int): defaults to 0 if none; don't use __size to call setter
             position (int): tuple of two positive integers
         """
         self.size = size
@@ -37,7 +37,7 @@ class Square:
 
     @property
     def size(self):
-        """
+        """"
         Getter
 
         Return: size
@@ -46,7 +46,7 @@ class Square:
 
     @size.setter
     def size(self, value):
-        """
+        """"
         Setter
 
         Args:
@@ -74,12 +74,12 @@ class Square:
         Setter
 
         Args:
-            value: sets position to tuple if value is tuple of two positive ints
+            value: sets position to tuple if value is tuple of 2 positive ints
         """
         if type(value) is not tuple or len(value) != 2 or \
-            type(value[0]) is not int or type(value[1]) is not int or \
-            value[0] < 0 or value[1] < 0:
-             raise TypeError("position must be a tuple of 2 positive integers")
+           type(value[0]) is not int or type(value[1]) is not int or \
+           value[0] < 0 or value[1] < 0:
+            raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
 
@@ -98,5 +98,5 @@ class Square:
         else:
             print("\n" * self.__position[1], end="")
             print("\n".join([" " * self.__position[0] +
-                            "#" * self.size
-                            for rows in range(self.__size)]))
+                             "#" * self.size
+                             for rows in range(self.__size)]))

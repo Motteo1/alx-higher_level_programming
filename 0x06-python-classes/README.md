@@ -10,6 +10,8 @@
 5. Print a square based on the previous files
 6. define private postion attribute to use in printing offsets
 7. 100 - create head, insert nodes, ptint with `__str__`
+8. 101 - define `__str__` method to print square if called with print()
+
 
 ### Environment
 * Language: Pyhton 3.4.3

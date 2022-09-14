@@ -9,8 +9,10 @@ Can access and update size
 class Square:
     """
     class Square definition
+
     Args:
         size (int): size of a side in square
+
     Functions:
         __init__(self, size)
         size(self)
@@ -21,6 +23,7 @@ class Square:
     def __init__(self, size=0):
         """
         Initializes square
+
         Attributes:
             size (int): defaults to 0 if none; don't use __size to call setter
         """
@@ -30,6 +33,7 @@ class Square:
     def size(self):
         """"
         Getter
+
         Return: size
         """
         return self.__size
@@ -38,6 +42,7 @@ class Square:
     def size(self, value):
         """
         Setter
+
         Args:
             value: sets size to value, if int and >= 0
         """
@@ -90,3 +95,4 @@ class Square:
         """
         Compares and returns if greater than or equal to
         """
+        return self.size >= other.size

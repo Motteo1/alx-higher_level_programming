@@ -7,7 +7,7 @@
 2. define size is int and >= 0 else TypeError
 3. Define public method area with ValueError if size < 0
 4. Access and update private attribute
-
+5. Print a square based on the previous files
 
 ### Environment
 * Language: Pyhton 3.4.3

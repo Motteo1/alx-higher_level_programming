@@ -3,8 +3,10 @@
 
 #### Description
 0. create empty square class and build on this class in the next files
-1. Write a class Square that defines a square (based on 0-square.py)
-2. Write a class Square that defines a square (based on 1-square.py)
+1. Add privat attribute size
+2. define size is int and >= 0 else TypeError
+3. Define public method area with ValueError if size < 0
+
 
 
 ### Environment

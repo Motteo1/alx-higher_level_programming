@@ -11,7 +11,8 @@
 6. define private postion attribute to use in printing offsets
 7. 100 - create head, insert nodes, ptint with `__str__`
 8. 101 - define `__str__` method to print square if called with print()
-
+9. 102 - define comparator methods
+10. 103 - recreate code to match the following Bytecode:
 
 ### Environment
 * Language: Pyhton 3.4.3

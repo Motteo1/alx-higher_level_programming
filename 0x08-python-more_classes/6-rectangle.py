@@ -14,10 +14,10 @@ class Rectangle():
     Args:
         width (int): width
         height (int): height
-    
+
     Attributes:
         number_of_instances (int): number of instances created and not deleted
-    
+
     Functions:
         __init__(self, width, height)
         width(self)

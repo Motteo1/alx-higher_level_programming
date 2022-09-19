@@ -92,5 +92,5 @@ class Rectangle():
         return pic
 
     def __repr__(self):
-        """string representation to recreate new instance """
-        return "Rectangle({:d}, {:d}).format(self.width, self.height)
+        """ string representation to recreate new instance """
+        return "Rectangle({:d}, {:d})".format(self.width, self.height)

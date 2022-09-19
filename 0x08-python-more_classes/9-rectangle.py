@@ -12,12 +12,15 @@ and has class method that returns a new class instance via square
 class Rectangle():
     """
     Defines class rectangle with private attribute width and height
+
     Args:
         width (int): width
         height (int): height
+
     Attributes:
         number_of_instances (int): number of instances created and not deleted
         print_symbol (any type): used to print string representation
+
     Functions:
         __init__(self, width, height)
         width(self)
@@ -107,4 +110,9 @@ class Rectangle():
                                    else "rect_2"))
         if rect_2.area() > rect_1.area():
             return rect_2
-        return 
+        return rect_1
+
+    @classmethod
+    def square(cls, size=0):
+        """ Returns new rectangle instance with width  == height == size """
+        return cls(size, size)

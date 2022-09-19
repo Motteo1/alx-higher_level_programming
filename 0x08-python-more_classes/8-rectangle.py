@@ -11,15 +11,15 @@ and has static method that returns bigger rectangle out of two given
 class Rectangle():
     """
     Defines class rectangle with private attribute width and height
-    
+
     Args:
         width (int): width
         height (int): height
-    
+
     Attributes:
         number_of_instances (int): number of instances created and not deleted
         print_symbol (any type): used to print string representation
-    
+
     Functions:
         __init__(self, width, height)
         width(self)
@@ -96,3 +96,13 @@ class Rectangle():
     def __repr__(self):
         """ String representation to recreate new instance """
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
+
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        if rect_1.area() >= rect_2.area():
+            return rect_1
+        return rect_2

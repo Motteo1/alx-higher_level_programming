@@ -9,9 +9,11 @@ public area and perimeter methods, allows printing #'s, and deletes
 class Rectangle:
     """
     Defines class rectangle with private attribute width and height
+
     Args:
         width (int): width
         height (int): height
+
     Functions:
         __init__(self, width, height)
         width(self)
@@ -77,3 +79,7 @@ class Rectangle:
     def __repr__(self):
         """ String representation to recreate new instance """
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
+
+    def __del__(self):
+        """ Deletes instance of class """
+        print("Bye rectangle...")

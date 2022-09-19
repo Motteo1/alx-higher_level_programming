@@ -10,12 +10,15 @@ deletes, and has public attribute to keep track of number of instances
 class Rectangle():
     """
     Defines class rectangle with private attribute width and height
+
     Args:
         width (int): width
         height (int): height
+
     Attributes:
         number_of_instances (int): number of instances created and not deleted
         print_symbol (any type): used to print string representation
+
     Functions:
         __init__(self, width, height)
         width(self)
@@ -86,4 +89,8 @@ class Rectangle():
             return ""
         pic = "\n".join([str(self.print_symbol) * self.__width
                          for rows in range(self.__height)])
-        return 
+        return pic
+
+    def __repr__(self):
+        """string representation to recreate new instance """
+        return "Rectangle({:d}, {:d}).format(self.width, self.height)

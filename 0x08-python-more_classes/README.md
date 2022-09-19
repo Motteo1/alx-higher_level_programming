@@ -3,7 +3,7 @@
 
 #### Description of each file:
 0. Define empty Rectangle class to use as a basis for the other files in this directory
-1. 
+1. Add private width and height attributes with @property getter and setter
 
 ### Environment
 * Language: Python 3.4.3

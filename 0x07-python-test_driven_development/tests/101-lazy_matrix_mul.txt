@@ -21,3 +21,4 @@ FAIL CASES:
 
 Test empty matrix:
 Test different sized lists in matrix:
+Test matrix with other data types:

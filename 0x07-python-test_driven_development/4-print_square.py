@@ -18,3 +18,4 @@ def print_square(size):
     if size == 0:
         print("", end="")
     else:
+        print("\n".join(["#" * size for rows in range(size)]))

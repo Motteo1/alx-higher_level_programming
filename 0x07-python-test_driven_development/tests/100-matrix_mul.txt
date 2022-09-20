@@ -67,3 +67,4 @@ Test matrix with other data types:
      >>> print(matrix_mul(m_a, m_b))
      Traceback (most recent call last):
      ...
+     TypeError: m_a must be a list

@@ -45,3 +45,5 @@ def matrix_mul(m_a, m_b):
             l.append(n)
             n = 0
         new_matrix.append(l)
+
+    return new_matrix

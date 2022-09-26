@@ -6,6 +6,7 @@ tests --- Folder holds tests and edge cases testing
 
 0. Function that returns list of attributes and methods of object
 1. Class that inherits from list and prints sorted list
+2. Function using type() - same object
 
 
 ### Environment

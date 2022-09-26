@@ -18,6 +18,8 @@ tests --- Folder holds tests and edge cases testing
 9. Implement str to print
 10. Class Square that inherits Rectangle; initialize size and use area
 11. Implement area and print
+12. 100- class MyInt that inherits from int; inverts == ans != operations
+13. 101- set attribute to object if possible
 
 ### Environment
 * Language: Python 3.4.3

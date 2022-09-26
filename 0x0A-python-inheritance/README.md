@@ -1,0 +1,17 @@
+### Python - Inheritance
+> Each file holds code that illustrates the concepts of superclass, baseclass and subclasses; utilizing parent classes' attributes and methods; overwriting parent classes' methods
+
+#### Description of each file:
+0. Function that returns list of attributes and methods of object
+1. Class that inherits from list and prints sorted list
+
+
+### Environment
+* Language: Python 3.4.3
+* OS: Ubuntu 20.04 LTS
+* Compiler: python3
+* Style guidelines: [Pycodestyle (version 2.8)](https://pypi.org/project/pycodestyle/) || [Python Docstrings](http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
+
+***
+### Authors
+Motteo1

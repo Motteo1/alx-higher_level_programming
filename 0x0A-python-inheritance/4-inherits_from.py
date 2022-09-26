@@ -7,7 +7,7 @@ returns True if obj is instance of class that it inherits from or is subcls of
 """
 
 
-def inherits_fom(obj, a_class):
+def inherits_from(obj, a_class):
     """
     Notes:
         use type() to get specific class

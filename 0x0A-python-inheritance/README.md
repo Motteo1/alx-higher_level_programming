@@ -15,6 +15,8 @@ tests --- Folder holds tests and edge cases testing
 6. Add area method that's empty
 7. Add integer_validator method
 8. Class Rectangle that inherits BaseGeometry; initializes private width, height
+9. Implement str to print
+
 
 ### Environment
 * Language: Python 3.4.3

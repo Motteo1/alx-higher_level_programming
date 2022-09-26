@@ -11,6 +11,7 @@ tests --- Folder holds tests and edge cases testing
 3. Function using isinstance() - same class inherited from
 3. Function using isinstance() - same class inherited from
 4. Function using issubclass() - only subclass of
+5. Empty class BaseGeometry (so next questions can build on this)
 
 
 ### Environment

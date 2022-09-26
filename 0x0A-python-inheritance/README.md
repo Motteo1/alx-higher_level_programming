@@ -16,6 +16,7 @@ tests --- Folder holds tests and edge cases testing
 7. Add integer_validator method
 8. Class Rectangle that inherits BaseGeometry; initializes private width, height
 9. Implement str to print
+10. Class Square that inherits Rectangle; initialize size and use area
 
 
 ### Environment

@@ -2,6 +2,8 @@
 > Each file holds code that illustrates the concepts of superclass, baseclass and subclasses; utilizing parent classes' attributes and methods; overwriting parent classes' methods
 
 #### Description of each file:
+tests --- Folder holds tests and edge cases testing
+
 0. Function that returns list of attributes and methods of object
 1. Class that inherits from list and prints sorted list
 

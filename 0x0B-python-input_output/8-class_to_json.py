@@ -9,7 +9,7 @@ for JSON serialization of an object
 """
 
 
-def class_tojson(obj):
+def class_to_json(obj):
     """Returns decrionary description with simple data structure
        (list, dictionary, string)
        for JSON serialization of an object

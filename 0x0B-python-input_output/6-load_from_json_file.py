@@ -6,7 +6,7 @@ Contains function that creates a Python obj from JSON file
 """
 
 
-def load_fom_json_file(filename):
+def load_from_json_file(filename):
     """Creates a Python obj from JSON file
     Args:
         filename: file

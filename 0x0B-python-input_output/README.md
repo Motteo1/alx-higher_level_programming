@@ -6,6 +6,7 @@
 1. Function that writes a str to text file; returns num of chars written
 2. Function that appends str to end of txt file; returns num of chars added
 3. Function that returns the JSON representation of an object (string)
+4. Function that returns an object (Python data structure) from JSON string
 
 
 ### Environment

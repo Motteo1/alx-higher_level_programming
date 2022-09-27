@@ -1,19 +1,4 @@
-#!/usr/bin/python3
-"""
-Script reads stdin line by line and computes metrics
-
-Input format:
-<IP Address> - [<date>] "GET /projects/260 HTTP/1.1" <status code> <file size>
-
-Each 10 lines and after a keyboard interruption (CTRL + C),
-prints those statistics since the beginning:
-total file size and
-possible status code: 200, 301, 400, 401, 403, 404, 405 and 500
-
-format: File size: <total size>
-format: <status code (in ascending order)>: <number>
-"""
-# ads from standard input and computes metrics.
+#!/usr/bin/python3ads from standard input and computes metrics.
 
 """
 After every ten lines or the input of a keyboard interruption (CTRL + C),
@@ -25,6 +10,7 @@ prints the following statistics:
 
 def print_stats(size, status_codes):
     """Print accumulated metrics.
+    
     Args:
         size (int): The accumulated read file size.
         status_codes (dict): The accumulated count of status codes.
@@ -61,4 +47,12 @@ if __name__ == "__main__":
                     if status_codes.get(line[-2], -1) == -1:
                         status_codes[line[-2]] = 1
                     else:
-                        status_codes[line[-2]] += 
+                        status_codes[line[-2]] +=
+            except IndexError:
+                pass
+
+        print_stats(size, status_codes)
+
+    except KeyboardInterrupt:
+        print_stats(size, status_codes)
+        raise

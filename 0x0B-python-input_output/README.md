@@ -3,6 +3,8 @@
 
 #### File description:
 0. Reads a text file (UTF8) and prints it to stdout
+1. Function that writes a str to text file; returns num of chars written
+
 
 ### Environment
 * Language: Python 3.4.3

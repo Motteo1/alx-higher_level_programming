@@ -14,6 +14,7 @@
 9. class Student that retrieves dictionary representation of student instance
 10. build on #9 and return dictionary of attributes asked
 11. Build on #10 and transfer all of one instances attributes to another
+12. [Pascal's triangle] - function that returns a list of lists of ints
 
 ### Environment
 * Language: Python 3.4.3

@@ -8,6 +8,7 @@
 3. Function that returns the JSON representation of an object (string)
 4. Function that returns an object (Python data structure) from JSON string
 5. Writes an Object to a text file, using a JSON representation
+6. Creates an Object from a JSON file
 
 
 ### Environment

@@ -32,7 +32,7 @@ class Student():
         Returns dictionary description with simple data structure
         (list, dictionary, dictionary, string)
         for JSON serialization of an object
-        
+
         Return:
             Only return dict of attrs given to us
             Return entire dict if no attrs given

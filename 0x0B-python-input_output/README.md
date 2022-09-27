@@ -12,15 +12,7 @@
 7. A script that adds all arguments to a Python list, then saves them to a file
 8. Returns the dictionary description with simple data structure `obj.__dict__`
 9. class Student that retrieves dictionary representation of student instance
-9. class Student that retrieves dictionary representation of student instance
-9. class Student that retrieves dictionary representation of student instance
-9. class Student that retrieves dictionary representation of student instance
-9. class Student that retrieves dictionary representation of student instance
-9. class Student that retrieves dictionary representation of student instance
-9. class Student that retrieves dictionary representation of student instance
-9. class Student that retrieves dictionary representation of student instance
-9. class Student that retrieves dictionary representation of student instance
-
+10. build on #9 and return dictionary attributes asked
 
 ### Environment
 * Language: Python 3.4.3

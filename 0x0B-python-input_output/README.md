@@ -9,6 +9,7 @@
 4. Function that returns an object (Python data structure) from JSON string
 5. Writes an Object to a text file, using a JSON representation
 6. Creates an Object from a JSON file
+7. A script that adds all arguments to a Python list, then saves them to a file
 
 
 ### Environment

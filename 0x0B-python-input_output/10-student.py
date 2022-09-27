@@ -19,7 +19,7 @@ class Student():
     Public Methods:
         to_json: retrieves its dictionary representation
     """
-    def __init(self, first_name, last_name, age):
+    def __init__(self, first_name, last_name, age):
         """
         Initializes student with full name and age
         """

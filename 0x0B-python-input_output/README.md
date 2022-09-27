@@ -11,6 +11,15 @@
 6. Creates an Object from a JSON file
 7. A script that adds all arguments to a Python list, then saves them to a file
 8. Returns the dictionary description with simple data structure `obj.__dict__`
+9. class Student that retrieves dictionary representation of student instance
+9. class Student that retrieves dictionary representation of student instance
+9. class Student that retrieves dictionary representation of student instance
+9. class Student that retrieves dictionary representation of student instance
+9. class Student that retrieves dictionary representation of student instance
+9. class Student that retrieves dictionary representation of student instance
+9. class Student that retrieves dictionary representation of student instance
+9. class Student that retrieves dictionary representation of student instance
+9. class Student that retrieves dictionary representation of student instance
 
 
 ### Environment

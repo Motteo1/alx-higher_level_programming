@@ -47,7 +47,7 @@ if __name__ == "__main__":
                     if status_codes.get(line[-2], -1) == -1:
                         status_codes[line[-2]] = 1
                     else:
-                        status_codes[line[-2]] +=
+                        status_codes[line[-2]] += 1
             except IndexError:
                 pass
 

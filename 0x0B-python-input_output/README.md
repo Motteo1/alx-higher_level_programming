@@ -15,6 +15,8 @@
 10. build on #9 and return dictionary of attributes asked
 11. Build on #10 and transfer all of one instances attributes to another
 12. [Pascal's triangle] - function that returns a list of lists of ints
+13. 100- function searches for lines that contains specific str and inserts txt
+14. 101- script that reads stdin lin by line and computes metrics
 
 ### Environment
 * Language: Python 3.4.3

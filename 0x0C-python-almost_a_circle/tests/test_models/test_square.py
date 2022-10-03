@@ -30,3 +30,50 @@ class TestBase(unittest.TestCase):
 
     """Test attributes"""
     def test_all_attr_given(self):
+        """Test all attributes match what's given"""
+        s1 = Square(9, 99, 999, 1000)
+        self.assertTrue(s1.width == 9)
+        self.assertTrue(s1.height == 9)
+        self.assertTrue(s1.size == 9)
+        self.assertTrue(s1.x == 99)
+        self.assertTrue(s1.y == 999)
+        self.assertTrue(s1.id == 1000)
+
+    def test_default_attr(self):
+        """Test default attributes are set when not given"""
+        s2 = Square(88)
+        self.assertTrue(s2.width == 88)
+        self.assertTrue(s2.height == 88)
+        self.assertTrue(s2.size == 88)
+        self.assertTrue(s2.x == 0)
+        self.assertTrue(s2.y == 0)
+        self.assertTrue(s2.id is not None)
+
+    def test_attr_validated(self):
+        """Test attributes are validated before set"""
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            Square("10")
+            Square([10, 3])
+            Square({20, })
+            Square({"d": 20})
+            Square(None)
+            Square((30, 20), 4)
+        with self.assertRaisesRegex(ValueError, "width must be > 0"):
+            Square(-1)
+            Square(9).size(-9)
+
+    """Test args given"""
+    def test_invalid_args(self):
+        """Test too many args given throws error"""
+        with self.assertRaises(TypeError):
+            Square(1, 2, 3, 4, 5, 6, 7)
+        """Test too little args given throws error"""
+        with self.assertRaises(TypeError):
+            Square()
+            Square(None)
+
+    """Test class"""
+    def test_class(self):
+        """Test class created is indeed Rectangle"""
+        s = Square(10)
+        self.assertEqual(type(s), Square)

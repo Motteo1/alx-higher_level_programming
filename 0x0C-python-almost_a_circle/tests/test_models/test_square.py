@@ -77,3 +77,49 @@ class TestBase(unittest.TestCase):
         """Test class created is indeed Rectangle"""
         s = Square(10)
         self.assertEqual(type(s), Square)
+
+    """Test methods"""
+    def test_area(self):
+        """Test method: area"""
+        self.assertEqual(Square(3).area(), 9)
+        self.assertEqual(Square(4, 0, 0).area(), 16)
+
+    def test_display(self):
+        """Test method: display"""
+        with StringIO() as bufr, redirect_stdout(bufr):
+            Square(4).display()
+            b = bufr.getvalue()
+        self.assertEqual(b, '####\n####\n####\n####\n')
+        with StringIO() as bufr, redirect_stdout(bufr):
+            Square(3, 1, 2).display()
+            b = bufr.getvalue()
+        self.assertEqual(b, '\n\n ###\n ###\n ###\n')
+
+    def test_print(self):
+        """Test method: __str__"""
+        s = Square(1, 2, 3, 44)
+        s.size = 500
+        self.assertEqual(str(s), '[Square] (44) 2/3 - 500')
+
+    def test_update(self):
+        """Test method: update(*args)"""
+        s = Square(1, 2, 3, 4)
+        s.update(10, 10, 10, 10)
+        self.assertEqual(str(s), '[Square] (10) 10/10 - 10')
+        s.update()
+        self.assertEqual(str(s), '[Square] (10) 10/10 - 10')
+        s.update(99)
+        self.assertEqual(str(s), '[Square] (99) 10/10 - 10')
+        s.update(99, 5)
+        self.assertEqual(str(s), '[Square] (99) 10/10 - 5')
+        s.update(44, 55, 1, 2)
+        self.assertEqual(str(s), '[Square] (44) 1/2 - 55')
+        """Test method: update(*kwargs)"""
+        s.update(id=88, size=77, nokey=99)
+        self.assertEqual(str(s), '[Square] (88) 1/2 - 77')
+
+    def test_to_dictionary(self):
+        """Test method: to_dictionary"""
+        sdic = Square(1, 2, 3, 4).to_dictionary()
+        self.assertEqual(type(sdic), dict)
+        s2 = Square(10, 10)

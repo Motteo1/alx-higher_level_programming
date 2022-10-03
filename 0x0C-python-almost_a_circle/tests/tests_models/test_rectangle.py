@@ -47,3 +47,24 @@ class TestBase(unittest.TestCase):
         self.assertTrue(r2.x == 0)
         self.assertTrue(r2.y == 0)
         self.assertTrue(r2.id is not None)
+
+    def test_attr_validated(self):
+        """Test attributes are validated before set"""
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
+            Rectangle("10", 1, 1, 1, 1)
+            Rectangle([10, 3], 1, 1, 1, 1)
+        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+            Rectangle(1, {20, }, 1, 1, 1)
+            Rectangle(1, {"d": 20}, 1, 1, 1)
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
+            Rectangle(1, 1, None, 1, 1)
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
+            Rectangle(1, 1, 1, (30, 20), 1)
+        with self.assertRaisesRegex(ValueError, "width must be > 0"):
+            Rectangle(0, 1, 1, 1, 1)
+        with self.assertRaisesRegex(ValueError, "height must be > 0"):
+            Rectangle(1, -20, 1, 1, 1)
+        with self.assertRaisesRegex(ValueError, "x must be >= 0"):
+            Rectangle(1, 1, -1, 1, 1)
+        with self.assertRaisesRegex(ValueError, "y must be >= 0"):
+            Rectangle(1, 1, 1, -99, 1)

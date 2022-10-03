@@ -61,7 +61,7 @@ class TestBase(unittest.TestCase):
     def test_invalid_args(self):
         """Test too many args given throws error"""
         with self.assertRaises(TypeError):
-            Base(50,50)
+            Base(50, 50)
 
     """Test class"""
     def test_class(self):
@@ -150,3 +150,37 @@ class TestBase(unittest.TestCase):
         Rectangle.save_to_file(None)
         with open("Rectangle.json", "r") as file:
             self.assertEqual('[]', file.read())
+
+    def test_empty_none_to_file(self):
+        """Test save empty list to file"""
+        Rectangle.save_to_file([])
+        with open("Rectangle.json", "r") as file:
+            self.assertEqual('[]', file.read())
+
+    """Test loading list of instances from JSON string repr of dict in file"""
+    def test_load_from_file(self):
+        """Test load from file"""
+        r = Rectangle(10, 7, 2, 8, 99)
+        r2 = Rectangle(2, 4, 2, 2, 98)
+        Rectangle.save_to_file([r, r2])
+        recs = Rectangle.load_from_file()
+        self.assertEqual(len(recs), 2)
+        for k, v in enumerate(recs):
+            if k == 0:
+                self.assertEqual(str(v), '[Rectangle] (99) 2/8 - 10/7')
+            if k == 1:
+                self.assertEqual(str(v), '[Rectangle] (98) 2/2 - 2/4')
+
+    def test_load_from_none_file(self):
+        """Test load from None file"""
+        Rectangle.save_to_file(None)
+        recs = Rectangle.load_from_file()
+        self.assertEqual(type(recs), list)
+        self.assertEqual(len(recs), 0)
+
+    def test_load_from_empty_file(self):
+        """Test load from empty file"""
+        Rectangle.save_to_file([])
+        recs = Rectangle.load_from_file()
+        self.assertEqual(type(recs), list)
+        self.assertEqual(len(recs), 0)

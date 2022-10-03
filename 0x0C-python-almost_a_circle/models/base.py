@@ -81,7 +81,7 @@ class Base():
         filenamee = cls.__name__ + ".json"
         l = []
         try:
-             with open(filenamee, "r") as f:
+            with open(filenamee, "r") as f:
                 instances = cls.from_json_string(f.read())
             for i, dic in enumerate(instances):
                 l.append(cls.create(**instances[i]))
@@ -90,7 +90,7 @@ class Base():
         return l
 
     @classmethod
-     def save_to_file_csv(cls, list_objs):
+    def save_to_file_csv(cls, list_objs):
         filename = cls.__name__ + ".csv"
         with open(filename, 'w', newline='') as f:
             writer = csv.writer(f)

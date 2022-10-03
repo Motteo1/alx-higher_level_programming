@@ -28,3 +28,22 @@ class TestPep8(unittest.TestCase):
 
 class TestBase(unittest.TestCase):
     """Tests for models/base.py"""
+
+    def setUp(self):
+        pass
+
+    def tearDown(self):
+        try:
+            os.remove("Rectangle.json")
+        except:
+            pass
+
+    """Test attributes"""
+    def test_id_given(self):
+        """Test ids match when given"""
+        self.assertTrue(Base(999), self.id == 999)
+        self.assertTrue(Base(0), self.id == 0)
+        self.assertTrue(Base(1), self.id == 1)
+        self.assertTrue(Base(-80), self.id == -80)
+
+    def test_id_not_given(self):

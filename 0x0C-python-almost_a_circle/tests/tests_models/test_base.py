@@ -90,3 +90,63 @@ class TestBase(unittest.TestCase):
     def test_empty_to_json_string(self):
         """Test empty dict given translates into JSON string of empty dict"""
         d3 = dict()
+        strd3 = Base.to_json_string([d3])
+        self.assertTrue(len(d3) == 0)
+        self.assertTrue(type(strd3) == str)
+        self.assertTrue(strd3, "[]")
+
+    """Test JSON to Python object"""
+    def test_from_json_string(self):
+        """Test JSON string translates into Python dict"""
+        s0 = '[{"id": 1, "width": 2, "height": 3, "x": 4, "y": 5},\
+               {"id": 6, "width": 7, "height": 8, "x": 9, "y": 10}]'
+        strs0 = Base.from_json_string(s0)
+        self.assertTrue(type(s0) == str)
+        self.assertTrue(type(strs0) == list)
+        self.assertTrue(type(strs0[0]) == dict)
+        self.assertTrue(strs0,
+                        [{"id": 1, "width": 2, "height": 3, "x": 4, "y": 5},
+                         {"id": 6, "width": 7, "height": 8, "x": 9, "y": 10}])
+        self.assertTrue(strs0[0],
+                        {"id": 1, "width": 2, "height": 3, "x": 4, "y": 5})
+
+    def test_from_none_json_string(self):
+        """Test no JSON string translates into empty Python dict"""
+        s2 = None
+        strs2 = Base.from_json_string(s2)
+        self.assertTrue(type(strs2) == list)
+        self.assertTrue(strs2 == [])
+
+    def test_from_empty_json_string(self):
+        """Test no JSON string translates into empty Python dict"""
+        s3 = ""
+        strs3 = Base.from_json_string(s3)
+        self.assertTrue(type(strs3) == list)
+        self.assertTrue(strs3 == [])
+
+    """Test creating instance from dictionary"""
+    def test_create(self):
+        """Test transferring attribute dictionary to another instance"""
+        r = Rectangle(3, 5, 1, 2, 99)
+        rdic = r.to_dictionary()
+        r2 = Rectangle.create(**rdic)
+        self.assertEqual(str(r), '[Rectangle] (99) 1/2 - 3/5')
+        self.assertEqual(str(r2), '[Rectangle] (99) 1/2 - 3/5')
+        self.assertIsNot(r, r2)
+
+    """Test saving JSON string repr of dict to class specific file"""
+    def test_save_to_file(self):
+        """Test save to file"""
+        r = Rectangle(10, 7, 2, 8, 99)
+        r2 = Rectangle(2, 4, 2, 2, 98)
+        Rectangle.save_to_file([r, r2])
+        with open("Rectangle.json", "r") as file:
+            self.assertEqual(
+                json.dumps([r.to_dictionary(), r2.to_dictionary()]),
+                file.read())
+
+    def test_save_none_to_file(self):
+        """Test save None to file"""
+        Rectangle.save_to_file(None)
+        with open("Rectangle.json", "r") as file:
+            self.assertEqual('[]', file.read())

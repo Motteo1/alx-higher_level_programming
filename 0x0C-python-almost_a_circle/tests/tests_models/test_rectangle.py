@@ -26,4 +26,24 @@ class TestPep8(unittest.TestCase):
         self.assertEqual(errors, 0, 'Need to fix Pycodestyle')
 
 
+class TestBase(unittest.TestCase):
+    """Tests for models/rectangle.py"""
 
+    """Test attributes"""
+    def test_all_attr_given(self):
+        """Test all attributes match what's given"""
+        r1 = Rectangle(10, 20, 1, 2, 99)
+        self.assertTrue(r1.width == 10)
+        self.assertTrue(r1.height == 20)
+        self.assertTrue(r1.x == 1)
+        self.assertTrue(r1.y == 2)
+        self.assertTrue(r1.id == 99)
+
+    def test_default_attr(self):
+        """Test default attributes are set when not given"""
+        r2 = Rectangle(3, 4)
+        self.assertTrue(r2.width == 3)
+        self.assertTrue(r2.height == 4)
+        self.assertTrue(r2.x == 0)
+        self.assertTrue(r2.y == 0)
+        self.assertTrue(r2.id is not None)

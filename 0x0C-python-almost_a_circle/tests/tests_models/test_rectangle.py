@@ -68,3 +68,23 @@ class TestBase(unittest.TestCase):
             Rectangle(1, 1, -1, 1, 1)
         with self.assertRaisesRegex(ValueError, "y must be >= 0"):
             Rectangle(1, 1, 1, -99, 1)
+
+    def test_private_attr_access(self):
+        """Test private attributes are not accessible"""
+        with self.assertRaises(AttributeError):
+            print(Rectangle.__width)
+            print(Rectangle.__height)
+            print(Rectangle.__x)
+            print(Rectangle.__y)
+
+    """Test args given"""
+    def test_invalid_args(self):
+        """Test too many args given throws error"""
+        with self.assertRaises(TypeError):
+            Rectangle(1, 2, 3, 4, 5, 6, 7)
+        """Test too little args given throws error"""
+        with self.assertRaises(TypeError):
+            Rectangle(1)
+            Rectangle()
+            Rectangle(None)
+

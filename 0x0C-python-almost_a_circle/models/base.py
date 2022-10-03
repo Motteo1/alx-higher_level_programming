@@ -81,3 +81,23 @@ class Base():
         filenamee = cls.__name__ + ".json"
         l = []
         try:
+             with open(filenamee, "r") as f:
+                instances = cls.from_json_string(f.read())
+            for i, dic in enumerate(instances):
+                l.append(cls.create(**instances[i]))
+        except:
+            pass
+        return l
+
+    @classmethod
+     def save_to_file_csv(cls, list_objs):
+        filename = cls.__name__ + ".csv"
+        with open(filename, 'w', newline='') as f:
+            writer = csv.writer(f)
+            for o in list_objs:
+                if cls.__name__ == "Rectangle":
+                    writer.writerow([o.id, o.width, o.height, o.x, o.y])
+                if cls.__name__ == "Square":
+                    writer.writerow([o.id, o.size, o.x, o.y])
+
+    @classmethod

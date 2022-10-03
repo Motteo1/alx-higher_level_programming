@@ -6,7 +6,7 @@ Unittest for Base Class
 """
 
 import unittest
-import pep8
+import pycodestyle
 import json
 import os
 from models import base
@@ -19,11 +19,11 @@ class TestPep8(unittest.TestCase):
     """Pep8 models.base.py & tests/tests_models/tests_base.py"""
     def test_pep8(self):
         """Pep8"""
-        style = pep8.StyleGuide(quiet=false)
+        style = pycodestyle.StyleGuide(quiet=false)
         errors = 0
         files = ["models.base.py", "tests/test_models/test_base.py"]
         errors += style.check_files(files).total_errors
-        self.assertEqual(errors, 0, 'Need to fix Pep8')
+        self.assertEqual(errors, 0, 'Need to fix Pycodestyle')
 
 
 class TestBase(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestBase(unittest.TestCase):
     def tearDown(self):
         try:
             os.remove("Rectangle.json")
-        except:
+        except pass:
             pass
 
     """Test attributes"""

@@ -146,3 +146,9 @@ class TestBase(unittest.TestCase):
         self.assertEqual(str(r), '[Rectangle] (4000) 770/880 - 990/2')
 
     def test_to_dictionary(self):
+        """Test method: to_dictionary"""
+        rdic = Rectangle(1, 2, 3, 4, 5).to_dictionary()
+        self.assertEqual(type(rdic), dict)
+        r2 = Rectangle(10, 10)
+        r2.update(**rdic)
+        self.assertEqual(str(r2), '[Rectangle] (5) 3/4 - 1/2')

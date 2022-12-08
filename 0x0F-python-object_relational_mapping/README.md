@@ -1,0 +1,37 @@
+### Object Relational Mapping
+> Each file in this directory contains code that illustrates concepts related to databases and uses MySQLdb and SQLAalchemy with Python scripts
+
+##### Resources:
+[ORMs](https://www.fullstackpython.com/object-relational-mappers-orms.html), [SQLAlchemy](https://www.fullstackpython.com/sqlalchemy.html), [MySQLdb documentation](https://mysqlclient.readthedocs.io/), [Python MySQL documentation](http://www.mikusa.com/python-mysql-docs/index.html), [SQLAlchemy documentation](http://docs.sqlalchemy.org/en/latest/orm/tutorial.html), [prevent SQL injections](http://bobby-tables.com/python)
+
+#### Environment
+* Language: Python 3.8.5
+* Databases: MySQLdb v2.0.x | SQLAlchemy v1.4.x
+* OS: Ubuntu 20.04 LTS
+* Compiler: python3
+* Style guidelines: Pycodestyle 2.8.* || [Google Style Python Docstrings](http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
+MySQLdb
+`
+$ sudo apt-get install python3-dev
+$ sudo apt-get install libmysqlclient-dev
+$ sudo apt-get install zlib1g-dev
+$ sudo pip3 install mysqlclient
+...
+$ python3
+>>> import MySQLdb
+>>> MySQLdb.__version__ 
+'1.3.13'
+`
+SQLAlchemy
+`
+$ pip3 install SQLAlchemy
+...
+$ python3
+>>> import sqlalchemy
+>>> sqlalchemy.__version__ 
+'1.2.10'
+`
+
+***
+#### Authors
+Motteo1

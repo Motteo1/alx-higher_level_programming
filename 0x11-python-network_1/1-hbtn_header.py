@@ -5,7 +5,7 @@ usage
 """
 from sys import argv
 import urllib.parse
-import urlib.request
+import urllib.request
 
 
 if __name__ == "__main__":

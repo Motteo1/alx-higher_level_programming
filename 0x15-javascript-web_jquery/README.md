@@ -11,8 +11,9 @@
 * OS: Ubuntu 20.04 LTS
 * Style guidelines: Javascript standard || Javascript Semistandard || Airbnb Javascript Style Guide
 * Im port jQuery:
-`<head>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+`
+<head>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 `
 ***
